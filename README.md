@@ -6,10 +6,10 @@
 
 | Training Instance | Optimizer Used | Regularizer Used | Epochs | Early Stopping | Number of Layers | Learning Rate | Accuracy | F1 Score | Recall | Precision |
 |------------------|---------------|------------------|--------|---------------|---------------|--------------|---------|---------|--------|----------|
-| **Instance 1** | Default (SGD)   | None             | 50     | No            | 3             |         Defau| -       | -       | -      | -        |
-| **Instance 2** | Adam            | L2 (0.01)        | 50     | Yes           | 4             | 0.001        | -       | -       | -      | -        |
-| **Instance 3** | RMSprop         | L1 (0.01)        | 50     | No            | 4             | 0.0005       | -       | -       | -      | -        |
-| **Instance 4** | Adam            |                  | 100    | Yes           | 5             | 0.0005       | -       | -       | -      | -        |
+| **Instance 1** | RMSprop   | L2(0.05)            | 50     | Yes            | 3             |         Default| -       | -       | -      | -        |
+| **Instance 2** | Adam            | L2 (0.01)        | 50     | Yes           | 3            | 0.001        | -       | -       | -      | -        |
+| **Instance 3** | SGD         | L2 (0.01)        | 100     | yes         | 3             | 0.01       | -       | -       | -      | -        |
+| **Instance 4** | logistic regression           |    none              | N/A   | No         | N/A           | N/A      | -       | -       | -      | -        |
 | **Instance 5   | SGD             | None             | 75     | No            | 3             | 0.01         | -       | -       | -      | -        |
 
 ## Summary
