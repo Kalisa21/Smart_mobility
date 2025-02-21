@@ -26,11 +26,11 @@ The dataset contains historical traffic data with vehicle counts (cars, bikes, b
 # Discussion of Findings:
 The training instances explored different optimization techniques, regularization methods, and hyperparameters to improve traffic situation classification. The results reveal that the SGD optimizer with L2 regularization (Instance 3) yielded the highest accuracy (92.62%), followed closely by Instance 5 (96.81%), which appears to lack details on optimizer and regularization.
 
-# Instance 1 (RMSprop + L2 Regularization) achieved 88.42% accuracy, showing that RMSprop effectively adapts the learning rate dynamically but performed slightly lower than SGD.
-# Instance 2 (Adam + L2 Regularization) scored 86.58% accuracy, confirming Adam’s effectiveness in optimization but slightly underperforming compared to RMSprop.
-# Instance 3 (SGD + L2 Regularization) obtained the best result among deep learning models (92.62% accuracy), highlighting that SGD with momentum can be effective for this dataset.
-# Instance 4 (Logistic Regression) resulted in 80.03% accuracy, showing that traditional ML models can still perform reasonably well but may lack deep learning's adaptability.
-# Instance 5 outperformed all models with 96.81% accuracy, but lacks clarity on its optimization technique, possibly indicating a different architecture or overfitting.
+Instance 1 (RMSprop + L2 Regularization) achieved 88.42% accuracy, showing that RMSprop effectively adapts the learning rate dynamically but performed slightly lower than SGD.
+Instance 2 (Adam + L2 Regularization) scored 86.58% accuracy, confirming Adam’s effectiveness in optimization but slightly underperforming compared to RMSprop.
+Instance 3 (SGD + L2 Regularization) obtained the best result among deep learning models (92.62% accuracy), highlighting that SGD with momentum can be effective for this dataset.
+Instance 4 (Logistic Regression) resulted in 80.03% accuracy, showing that traditional ML models can still perform reasonably well but may lack deep learning's adaptability.
+Instance 5 outperformed all models with 96.81% accuracy, but lacks clarity on its optimization technique, possibly indicating a different architecture or overfitting.
 # Best Performing Combination:
 Instance 5 yielded the highest accuracy (96.81%)
 
