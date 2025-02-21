@@ -1,12 +1,17 @@
 # Smart_mobility
 
+Accuracy: 0.8842
+Precision: 0.8790
+Recall: 0.8842
+F1 Score: 0.8770
+
 # Optimization Results and Parameter Settings
 
 ## Training Instances Table
 
 | Training Instance | Optimizer Used | Regularizer Used | Epochs | Early Stopping | Number of Layers | Learning Rate | Accuracy | F1 Score | Recall | Precision |
 |------------------|---------------|------------------|--------|---------------|---------------|--------------|---------|---------|--------|----------|
-| **Instance 1** | RMSprop   | L2(0.05)            | 50     | Yes            | 3             |         Default| -       | -       | -      | -        |
+| **Instance 1** | RMSprop   | L2(0.05)            | 50     | Yes            | 3             |         Default| -       | 88.42       | 87.70      | 88.42   |87.9
 | **Instance 2** | Adam            | L2 (0.01)        | 50     | Yes           | 3            | 0.001        | -       | -       | -      | -        |
 | **Instance 3** | SGD         | L2 (0.01)        | 100     | yes         | 3             | 0.01       | -       | -       | -      | -        |
 | **Instance 4** | logistic regression           |    none              | N/A   | No         | N/A           | N/A      | -       | -       | -      | -        |
