@@ -1,9 +1,13 @@
 # Smart_mobility
 
-Accuracy: 0.9681
-Precision: 0.9679
-Recall: 0.9681
-F1 Score: 0.9679
+# problem statement
+
+Traffic congestion in Kigali is a growing concern, causing delays, increased fuel consumption, and economic inefficiencies. The lack of predictive models results in poor traffic flow management and inefficient use of road networks. Without data-driven insights, urban planning struggles to address peak-hour congestion effectively.
+
+# DATASET
+
+The dataset contains historical traffic data with vehicle counts (cars, bikes, buses, trucks) recorded at different times, dates, and days of the week. It includes a "Traffic Situation" label, allowing for traffic pattern analysis and machine learning-based congestion prediction.
+
 
 # Optimization Results and Parameter Settings
 
@@ -19,14 +23,19 @@ F1 Score: 0.9679
 
 ## Summary
 
-### **Best Performing Configuration**
-- **Instance 4** (Adam + L1 & L2 regularization + Early Stopping) provided the best balance of accuracy, precision, recall, and F1-score. The combination of **Adam optimizer, dual regularization, and a well-tuned learning rate (0.0005)** helped prevent overfitting while ensuring good convergence.
+# Discussion of Findings:
+The training instances explored different optimization techniques, regularization methods, and hyperparameters to improve traffic situation classification. The results reveal that the SGD optimizer with L2 regularization (Instance 3) yielded the highest accuracy (92.62%), followed closely by Instance 5 (96.81%), which appears to lack details on optimizer and regularization.
 
-### **Comparison Between ML Algorithms and Neural Networks**
-- **Neural Networks** showed superior performance when optimized correctly, especially with **Adam optimizer, dropout, and batch normalization**.
-- **ML Algorithms (e.g., Logistic Regression, SVM, Random Forest)** were easier to tune and required less computational power but struggled with complex feature interactions compared to deep networks.
-- **Random Forest** provided a **strong baseline** with good precision and recall, while **SVM** struggled with scalability.
+# Instance 1 (RMSprop + L2 Regularization) achieved 88.42% accuracy, showing that RMSprop effectively adapts the learning rate dynamically but performed slightly lower than SGD.
+# Instance 2 (Adam + L2 Regularization) scored 86.58% accuracy, confirming Adam’s effectiveness in optimization but slightly underperforming compared to RMSprop.
+# Instance 3 (SGD + L2 Regularization) obtained the best result among deep learning models (92.62% accuracy), highlighting that SGD with momentum can be effective for this dataset.
+# Instance 4 (Logistic Regression) resulted in 80.03% accuracy, showing that traditional ML models can still perform reasonably well but may lack deep learning's adaptability.
+# Instance 5 outperformed all models with 96.81% accuracy, but lacks clarity on its optimization technique, possibly indicating a different architecture or overfitting.
+# Best Performing Combination:
+Instance 5 yielded the highest accuracy (96.81%)
 
-### **Final Recommendation**
-For this dataset, **a well-optimized neural network** (Instance 4) outperformed classical ML algorithms. However, for real-time applications requiring interpretability, **Random Forest** remains a viable option.
+# Comparison: ML Algorithm vs. Neural Network:
+Neural Networks (Instances 1, 2, 3, 5) performed better overall than Logistic Regression (Instance 4).
+SGD-based neural network (Instance 3) outperformed Logistic Regression (92.62% vs. 80.03%), showing that deep learning models can better capture complex patterns in the dataset.
+Hyperparameters of Logistic Regression: Used the liblinear solver with max_iter=200, showing it was optimized for small datasets but still underperformed compared to neural networks.
 
