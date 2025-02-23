@@ -39,3 +39,6 @@ Neural Networks (Instances 1, 2, 3, 5) performed better overall than Logistic Re
 SGD-based neural network (Instance 3) outperformed Logistic Regression (92.62% vs. 80.03%), showing that deep learning models can better capture complex patterns in the dataset.
 Hyperparameters of Logistic Regression: Used the liblinear solver with max_iter=200, showing it was optimized for small datasets but still underperformed compared to neural networks.
 
+
+video link 
+https://youtu.be/C3tdnuEvQ0s 
